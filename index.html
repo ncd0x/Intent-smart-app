@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Intent Magic App</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; margin-top: 50px;}
+    button { padding: 10px 20px; font-size: 16px;}
+  </style>
+</head>
+<body>
+  <h1>Intent Magic</h1>
+  <p>What do you want to do?</p>
+  <button onclick="expressIntent('Swap tokens')">Swap Tokens</button>
+  <button onclick="expressIntent('Send funds')">Send Funds</button>
+  <button onclick="expressIntent('Join DAO')">Join DAO</button>
+
+  <p id="response" style="margin-top: 30px;"></p>
+
+  <script>
+    function expressIntent(intent) {
+      document.getElementById('response').innerText = `Intent registered: "${intent}". Solver will handle execution.`;
+}
+  </script>
+</body>
+</html>
